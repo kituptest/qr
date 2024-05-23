@@ -1,0 +1,29 @@
+input[value="6"] {
+    accent-color: silver;
+}
+input[value="5"] {
+    accent-color: navy;
+}
+input[value="4"] {
+    accent-color: green;
+}
+input[value="3"] {
+    accent-color: yellow;
+}
+input[value="2"] {
+    accent-color: orange;
+}
+input[value="1"] {
+    accent-color: red;
+}
+input[value="0"] {
+    accent-color: black;
+}
+p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 7px 7px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body class="bg-light">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+            <symbol id="up" viewBox="0 0 100 100">
+                <path
+                    d="M94.53,5.54V94.46H73.74l-1.85-6.15H88.38V11.69H49.75V29.4c-10.94,0-16.6,5-19.55,16.6l-1.73,6.64c-1.1,4.43,1.36,8.25,6.15,8.25H37l-1.47,6H30.44c-4.06,0-6.39,1.36-7.62,5l-3,8.85H46.31l3.44-3.32v17H5.47V5.54ZM66.36,88.31l1.84,6.15H59.35l-1.72-6.15L50,62.61H48.52L46.31,74.17l-3.44,3H25.28l1.23-3.81A3.87,3.87,0,0,1,30.2,70.6h8.11l7-29.76c-2.83.73-4.31,2.83-5.29,7l-1.73,7A3.26,3.26,0,0,1,35,57.69a3.1,3.1,0,0,1-2.83-4.06l1.73-6.77c2.58-10.08,7.25-13.77,17.22-13.77,7.75,0,11.81,3.32,10.08,11.19L57.75,59.9Zm-2.09-67.4c0,2.95,0,7.63-.86,9-.37.61-1.85,1.6-4.55,1.6-2.46,0-4.06-1-4.43-1.6-.86-1.48-1.11-6.27-1.11-9.23a3.11,3.11,0,0,1,.74-2.46,6.57,6.57,0,0,1,4.8-1.84,7.32,7.32,0,0,1,4.79,1.84C64.27,18.7,64.27,19.56,64.27,20.91Zm6.89,39a9.47,9.47,0,0,1-2.59-.49l-6.89-2L63,50.92l8.61,2.34a3.37,3.37,0,0,1-.49,6.64Z"
+                ></path>
+            </symbol>
+
+            <symbol id="meeting" viewBox="0 0 100 100">
+                <path
+                    d="M16.17,68.08H33.64l-.12,17.71L27,92.31V81.73L15.81,93.05,8.92,86.16,20.23,74.85H9.41ZM63.41,55.29A13.29,13.29,0,1,1,50.12,42,13.23,13.23,0,0,1,63.41,55.29ZM50.12,37.21,37.7,24.91v-9.6l7.63,7.63V7H55V22.82l7.51-7.38v9.22ZM84.19,93.05,73,81.73V92.31l-6.52-6.52-.12-17.71H83.83l6.76,6.77H79.77L91.08,86.16Z"
+                ></path>
+            </symbol>
+
+            <symbol id="authority" viewBox="0 0 100 100">
+                <path
+                    d="M21.2,54.89l6-24.24c1.11-4.55,3.2-6,6.77-6l-.87,11.19L27.72,56A3.56,3.56,0,0,1,24.4,58.7,3.19,3.19,0,0,1,21.2,54.89ZM57.86,91.42c.12,1.84-.25,3.19-2.34,3.19H52.81c-2.09,0-2.7-1.47-2.82-2.82L46.42,60.67h-3.2L39.65,91.79c-.12,1.35-.73,2.82-2.83,2.82h-2.7c-1.72,0-2.46-1.1-2.34-2.82L34.36,55H55.27ZM40.51,52.55,44.2,46.4H40.51l-3.69,6.15H34.49l2-27.92H52.94L55,52.55H48.51L52.2,46.4H48.51l-3.69,6.15Zm-.12-33a40.34,40.34,0,0,1-1.23-9.47,3,3,0,0,1,1-2.58,6.86,6.86,0,0,1,5.16-2,6.15,6.15,0,0,1,5,2c.5.49,1,1.11,1,3a46.22,46.22,0,0,1-1.23,9.1c-.25,1-2.09,2.22-4.8,2.22S40.76,20.57,40.39,19.58Zm15,5.05H77.05c1.23,0,1.84.49,1.84,1.35,0,2.21-2.83,5-6.15,5.17L56,31.64Z"
+                ></path>
+            </symbol>
+
+            <symbol id="warning" viewBox="0 0 100 100">
+                <path
+                    d="M82.23,88.22H8.92c-2.22,0-3.57-1.11-3.57-3a4.63,4.63,0,0,1,.61-2l1.48-2.58H77.92ZM54.8,14.05l-2.34-3.69a3.2,3.2,0,0,0-2.58-1.72,2.91,2.91,0,0,0-2.59,1.72L10,76H20.48ZM49.88,75.67A5.17,5.17,0,1,1,55,70.51,5.21,5.21,0,0,1,49.88,75.67Zm0-13.9c-2.34,0-4.06-1.72-4.31-5.16L45,45.78a4.77,4.77,0,0,1,4.92-4.92A4.91,4.91,0,0,1,55,45.78L54.3,56.61C54.06,60.05,52.34,61.77,49.88,61.77Zm2.21-33.58,35.06,60h4.18a3,3,0,0,0,3.32-3.08,3.44,3.44,0,0,0-.49-1.84L57.26,19Z"
+                ></path>
+            </symbol>
+        </svg>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto" style="margin: 3vw 0;">
+                    <div class="card shadow-sm">
+                        <div class="card-header small">
+                            <svg class="me-1" width="1rem" height="1rem"><use href="#warning" fill="red"></use></svg><span id="aviso">Cargando…</span>
+                        </div>
+
+                        <div class="card-body border-bottom">
+                            <h1 class="my-0">
+                                <svg class="me-3" width="2.5rem" height="2.5rem" style="margin-bottom: 0.6rem;"><use href="#up"></use></svg>Edificio <span>Torres del Pacífico</span>
+                            </h1>
+                        </div>
+
+                        <div class="card-body border-bottom">
+                            <h2 class="fs-4 d-flex justify-content-between align-items-center">
+                                <a href="https://maps.app.goo.gl/BnUJur7iiJfGeyqs8" class="link-dark" target="_blank" title="Google Maps">Av. San Martín 1130</a> <span>Depto: 202</span>
+                            </h2>
+                            <img src="img/edificio-2.jpg" class="w-100 shadow-sm mb-1" />
+                        </div>
+
+                        <div class="row p-3">
+                            <!--dueño de casa-->
+                            <div class="col-12">
+                                <h3 class="mt-2 d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <svg class="me-1 mb-2" width="2rem" height="2rem"><use href="#authority"></use></svg> Felipe Cortez
+                                    </span>
+                                    <span>55 años</span>
+                                </h3>
+                                <div class="row my-3">
+                                    <div class="col-4">
+                                        <img src="img/vecine-2.jpg" class="w-100 shadow-sm" />
+                                    </div>
+                                    <div class="col-8">
+                                        <p>Antecedendes de morbilidad: <span>diabetes</span></p>
+                                        <p class="my-0">Estado:</p>
+                                        <ul class="list-unstyled small">
+                                            <li class="my-1"><input type="radio" value="6" name="estado_1" checked /> SIN INFORMACIÓN</li>
+                                            <li class="mb-1"><input type="radio" value="5" name="estado_1" /> SIN URGENCIA</li>
+                                            <li class="mb-1"><input type="radio" value="4" name="estado_1" /> URGENCIA MENOR</li>
+                                            <li class="mb-1"><input type="radio" value="3" name="estado_1" /> URGENCIA</li>
+                                            <li class="mb-1"><input type="radio" value="2" name="estado_1" /> EMERGENCIA</li>
+                                            <li class="mb-1"><input type="radio" value="1" name="estado_1" /> RESUCITACIÓN</li>
+                                            <li class="mb-1"><input type="radio" value="0" name="estado_1" /> FALLECIDA/O</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr />
+                                <h3>
+                                    <svg class="me-2 mb-2" width="2rem" height="2rem"><use href="#meeting"></use></svg> Vive con <span>2</span> personas
+                                </h3>
+                                <hr />
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Cristina Sara</h4>
+                                <p>Relación: <span>Esposa</span></p>
+                                <p>Edad: <span>45 años</span></p>
+                                <p>Antecedendes de morbilidad: <span>ninguno</span></p>
+                                <p class="my-0">Estado:</p>
+                                <ul class="list-unstyled small">
+                                    <li class="my-1"><input type="radio" value="6" name="estado_2" checked /> SIN INFORMACIÓN</li>
+                                    <li class="mb-1"><input type="radio" value="5" name="estado_2" /> SIN URGENCIA</li>
+                                    <li class="mb-1"><input type="radio" value="4" name="estado_2" /> URGENCIA MENOR</li>
+                                    <li class="mb-1"><input type="radio" value="3" name="estado_2" /> URGENCIA</li>
+                                    <li class="mb-1"><input type="radio" value="2" name="estado_2" /> EMERGENCIA</li>
+                                    <li class="mb-1"><input type="radio" value="1" name="estado_2" /> RESUCITACIÓN</li>
+                                    <li class="mb-1"><input type="radio" value="0" name="estado_2" /> FALLECIDA/O</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="mt-4 mt-md-0">Hije Cortez Sara</h4>
+                                <p>Relación: <span>Hijo/a</span></p>
+                                <p>Edad: <span>10 años</span></p>
+                                <p>Antecedendes de morbilidad: <span>ninguno</span></p>
+                                <p class="my-0">Estado:</p>
+                                <ul class="list-unstyled small">
+                                    <li class="my-1"><input type="radio" value="6" name="estado_3" checked /> SIN INFORMACIÓN</li>
+                                    <li class="mb-1"><input type="radio" value="5" name="estado_3" /> SIN URGENCIA</li>
+                                    <li class="mb-1"><input type="radio" value="4" name="estado_3" /> URGENCIA MENOR</li>
+                                    <li class="mb-1"><input type="radio" value="3" name="estado_3" /> URGENCIA</li>
+                                    <li class="mb-1"><input type="radio" value="2" name="estado_3" /> EMERGENCIA</li>
+                                    <li class="mb-1"><input type="radio" value="1" name="estado_3" /> RESUCITACIÓN</li>
+                                    <li class="mb-1"><input type="radio" value="0" name="estado_3" /> FALLECIDA/O</li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <hr />
+                                <button class="btn btn-primary w-100" type="button" onclick="wifi()">INFORMAR CAMBIOS DE ESTADOS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const aviso = document.querySelector("#aviso");
+            aviso.innerHTML = "Prueba programada para el Miércoles 12 de junio de 2024, a las 20:33 hrs."
+            function wifi(){
+                alert("⚠ LA ACTUALIZACIÓN DEL SISTEMA DEPENDE DE LA CONEXIÓN INTERNET, QUE PUEDE FALLAR EN UNA EMERGENCIA ———— PERO USTED Y SU COMUNIDAD CUENTAN CON EL MATERIAL NECESARIO PARA HACER EL REGISTRO DE ESTADO DE MODO MANUAL E INFORMARLO MEDIANTE EL LIENZO KIT UP")
+            }
+        </script>
+    </body>
+</html>
